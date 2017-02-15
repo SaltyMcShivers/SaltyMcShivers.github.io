@@ -284,6 +284,7 @@ h1{
 	width: 80%;
 	display: inline-block;
 	margin-bottom: 10px;
+	color:black;
 }
 
 .showcaseText>h2{
@@ -291,8 +292,10 @@ h1{
 	font-weight: bold;
 	text-align: right;
 	display: inline-block;
+	vertical-align: top;
 	color: #404040;
-	width: 19%;
+	width: 17%;
+	margin-top: 22px;
 }
 
 .showcaseText>h3{
