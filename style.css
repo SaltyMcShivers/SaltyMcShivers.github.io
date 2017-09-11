@@ -553,6 +553,24 @@ body.modal-open {
 	padding-top: 20px;
 }
 
+.writeupContainer{
+	background-color: white;
+}
+
+.writeupContainer img{
+	display: block;
+    margin: auto;
+}
+
+.writeupContainer .italicised{
+	text-align: center;
+}
+
+.writeupContainer iframe{
+	display: block;
+    margin: auto;
+}
+
 .sectionTitle{
 	margin: 20px auto;
 	padding: 0;

@@ -1,0 +1,310 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Memory Puzzler</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script src="JavascriptSource.js"></script>
+
+	<!-- Noto Sans Font Link -->
+	<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=BioRhyme' rel='stylesheet' type='text/css'>
+
+	<link rel="icon" type="image/png" href="Images/General/FavIcon.png"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+	<div class="container custom-container">
+  		<div class="navbar navbar-fixed-top navbar-inverse navbar-custom">
+			<div id="navbar-header">
+				<div class="navbar-brand">
+					<a href="index.html"><img src="Images/General/WebsiteLogo.png" class="fl" width="100px" height="44px"></a>
+					<div class="fl">
+						<!--<h1>Michael Andryauskas</h1>-->
+					</div>
+				</div>
+			</div>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle Navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+			<div id="navbarButtons" class="collapse navbar-collapse navbar-right">
+				<ul class="nav navbar-nav">
+				<!--
+	  				<li class="dropdown">
+	  					<a href="#" class="dropdown-toggle" id="WorkToggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Work & Projects</a>
+	  					<ul class="dropdown-menu" aria-labelledby="WorkToggle">
+	  						<li>
+	  							<a onclick="scroll_if_anchor('#Introduction')">Introduction</a>
+	  						</li>
+			  				<li><a onclick="scroll_if_anchor('#Process')">Process</a></li>
+			  				<li><a onclick="scroll_if_anchor('#Testing')">User Testing</a></li>
+			  				<li><a onclick="scroll_if_anchor('#Breakdown')">Breakdown</a></li>
+			  				<li><a onclick="scroll_if_anchor('#Conclusion')">Conclusion</a></li>
+	  					</ul>
+	  				</li>
+	  				<li class="dropdown">
+	  					<a href="#" class="dropdown-toggle" id="ContactToggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Contact Me</a>
+	  					<ul class="dropdown-menu" aria-labelledby="ContactToggle">
+			  				<li><a href="mailto:michaelandryauskas@gmail.com" target="_blank">Email</a></li>
+	  						<li>
+	  							<a href="https://twitter.com/BigMikeTheDev" target="_blank">Twitter</a>
+	  						</li>
+			  				<li><a href="https://www.linkedin.com/in/michael-andryauskas" target="_blank">LinkedIn</a></li>
+	  					</ul>
+	  				</li>
+				</ul>
+				-->
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="container sectionContainer writeupContainer" id="UXDev">
+		<h1>Memory Puzzler UX Iteration</h1>
+		<h2 style="font-weight: normal; font-style: italic;">by Michael Andryauskas</h2>
+		<h2>Introduction</h2>
+		<p>For Udacity’s Virtual Reality Nanodegree course, we were tasked to create, test, and iterate on a small memory game on a mobile VR Device from August 15th to September 11th.  The instructors provided the initial Unity File, which included art assets and some basic game code.  The game was tested using a Samsung Galaxy S7 and a GearVR headset.</p>
+		<iframe id="VideoModalSource_16_9" src="https://www.youtube.com/embed/B-rrlXtT3os" frameborder="0" width="560" height="315" allowfullscreen></iframe><br>
+		<img src="Images/Puzzler/GameScreenshot_20170910_Progress.png">
+		<p class="italicised">Gameplay Screenshot of the Final Game</p>
+		
+		<h3>Gameplay Inspirations</h3>
+		<p>Memory Puzzler uses the same primary mechanic as Simon; the game presents a user with a pattern, and the user needs to repeat the pattern that was presented to him.  For this iteration of the app, there is only one pattern of five elements that the user needs to copy to complete the game.  The app presents the user with the same pattern until the user correctly repeats the pattern.</p><br>
+		
+		<h3>Personal Goals</h3>
+		<p>In addition to the primary objective of the course which was to learn about UX in VR Development, I wanted to explore the potential for the app to be used for mental capacity enhancement.  I wanted to set the tone of the application to be more clinical in nature rather than mysterious as the initial files suggested.  As such, I created my own placeholder environment art assets using Autodesk Maya and Adobe Photoshop rather than the provided art assets.</p><br>
+
+		<h2>Process</h2>
+		<h3>Statement of Purpose</h3>
+		<p>Memory Puzzler is a VR app for the GearVR that allows those who wish to improve their mental capabilities to refine their memory and concentration. </p><br>
+		
+		<h3>Persona</h3>
+		<p>For the Persona, I thought about how a user could have a mental disability yet still have an affinity for more high-tech experiences.  I created Sam, my persona, who would serve as a reference for design decisions I made.  It should be noted that this persona is not fully realized, and a more refined persona would require speaking to more than one potential user who fits the app’s target audience.</p>
+		<img src="Images/Puzzler/Puzzer Persona.jpg"><br>
+		
+		<h3>Sketches</h3>
+		<p>These are several sketches of the experience I created to map out how users would proceed through the world as well as the user interface elements they would interact with. </p><br>
+		<img src="Images/Puzzler/RoomSketch.jpg" width="800px" height="auto">
+		<p class="italicised">Sketch of the world layout I ended up utilizing.</p><br>
+		
+		<div style="margin: auto; width: 920px;">
+			<img src="Images/Puzzler/Sketch1.jpg" width="300" height="auto" style="display: inline-block">
+			<img src="Images/Puzzler/Sketch2.jpg" width="300" height="auto" style="display: inline-block">
+			<img src="Images/Puzzler/Sketch3.jpg" width="300" height="auto" style="display: inline-block">
+			<img src="Images/Puzzler/Sketch4.jpg" width="300" height="auto" style="display: inline-block">
+			<img src="Images/Puzzler/Sketch5.jpg" width="300" height="auto" style="display: inline-block">
+			<img src="Images/Puzzler/Sketch6.jpg" width="300" height="auto" style="display: inline-block">
+		</div>
+		<p class="italicised">Sketches of potential layouts of the UI Screens.  I ended up using the layout on the bottom-middle and bottom right.</p><br>
+		
+		<h2>User Testing </h2>
+		<h3>User Test 1</h3>
+		<p>The main focus of the first test is to determine if the scale of the room was appropriate for users.  I relied more on the Unity units for the height rather than my own judgement, since I was using art assets I built myself and I am much taller (6’5”) than the average person.  I was only able to test the experience with one person at the time, but she claimed that the scale was only a little smaller than she felt was correct.  Since she was around average height, I scaled the room to be a tad larger.</p><br>
+		<img src="Images/Puzzler/GameScreenshot_20170830.png"><br>
+		<p class="italicised">The initial layout of the room from the user's perspective</p>
+		<h3>User Test 2</h3>
+		<p>For the second test, I wanted to verify if the messages for the starting screen and ending UI panels were comfortable to read and to interact with, as well as user’s interpretations of the instruction on each panel.  I was only able to have access to one user, and she was able to interact with the buttons, despite this being her first experience interacting with the GearVR headset.  In addition, she was able to understand what the instructions were trying to convey, even if she was not sure what it meant by “Spheres.”  I altered the wording a little to make it clearer that the spheres were behind the panel.</p><br>
+		<img src="Images/Puzzler/GameScreenshot_20170831.png" width="450" height="auto"><br>
+		<img src="Images/Puzzler/GameScreenshot2_20170831.png" width="450" height="auto">
+		<p class="italicised">The first versions of the Worldspace Panels</p>
+		<h3>User Test 3</h3>
+		<p>For the third test, I wanted to determine if the movement speed of the avatar was comfortable for users.  I had a participant move from outside the room to the spheres, then from the spheres to the back of the room.  She did not feel any motion sickness while being moved throughout the world, nor did she feel the movement took too long.  As such, the movement speed did not need to be altered.  However, the user did feel uncomfortable moving through the spheres as she moved to the back of the room.  In the next iteration of the application, I made the spheres invisible once the user completed the puzzle so the user didn’t move through them anymore.</p><br>
+		<h3>User Test 4</h3>
+		<p>For the fourth test, I tested the audio feedback and the primary interaction methods with two participants.  Both users seemed to have difficulty understanding the initial instructions, and tried to interact with the orbs as the pattern was being displayed.  Users also had issues understanding when they entered an incorrect pattern, as there was only audio feedback letting them know they failed.  </p><br>
+		
+		<iframe id="VideoModalSource_16_9" src="https://www.youtube.com/embed/AaHmRVc4Kpc" frameborder="0" width="560" height="315" allowfullscreen></iframe><br>
+		<img src="Images/Puzzler/GameScreenshot_20170910_Hover.png"">
+		<p class="italicised">A screenshot of the user attempting to repeat the pattern.</p>
+		<p>In the next build, I included a message box under the spheres that gave text feedback to the user.  I also made the spheres blink red when the user enters the wrong sphere pattern.  Finally, I changed the wording on the first panel to tell the user he needs to observe the pattern the spheres made first before the user could try to repeat the pattern he observed.</p><br>
+		
+		<h2>Breakdown of the Final Piece</h2>
+		<h3>Starting Screen</h3>
+		<p>The user begins in a small compartment that resembles an elevator.  In front of the user is a worldspace UI that tells the user how to play the game.  They need to observe the pattern the spheres create, then they tap the spheres to repeat the pattern.  If the user presses the “Play Game” button, the user’s avatar moves forward and the user can play the game.</p><br>
+		<img src="Images/Puzzler/GameScreenshot_20170910.png">
+		<p class="italicised">The starting panel of the app.</p>
+		<h3>Gameplay</h3>
+		<p>The user is presented with five spheres.  Once the user’s avatar is close enough to the spheres, they start to blink in a pattern.  The user would then tap a sphere in an attempt to repeat the pattern the spheres made.  There is also a messaging box that presents the user with cues telling the user when to observe the pattern, the progress he made in recreating the pattern, and if the user needs to rewatch the pattern.  When the user looks directly at a sphere, the sphere turns green and the reticle becomes a ring rather than a circle.  If a pattern is entered incorrectly, the spheres blink red to indicate that a wrong sphere was pressed, and the user needs to rewatch the pattern and try again.  If the user is able to recreate the pattern, a success sound plays and the spheres disappear and the user moves forward to the end of the room.</p><br>
+		<img src="Images/Puzzler/GameScreenshot_20170910_Repeat.png">
+		<p class="italicised">The app is showing the user the pattern to repeat.</p>
+		<h3>Ending Screen</h3>
+		<p>The user’s avatar approaches the elevator in the back of the room and a congratulations screen appears in the back of the elevator.  This screen also includes a button that, if the user interacts with it, moves the user back to the starting point of the experience.</p><br>
+		<img src="Images/Puzzler/GameScreenshot_20170910_Winner.png">
+		<p class="italicised">The user has completed the puzzle!</p>
+		
+		<h2>Conclusion</h2>
+		<h3>User Feedback</h3>
+		<p>One encouraging comment I had was that one participant, who had mental handicaps due to a recent car accident, stated that the experience is reminiscent of the paper-based exercises the brain therapist would have him perform to improve his mental capabilities.  This user relayed the experience multiple times to try to improve his memory utilizing memory techniques he learned from his brain therapist.  From his feedback, I feel like the app would indeed have potential to serve as a mental capabilities recover application.</p><br>
+		<h3>Next steps</h3>
+		<p>If I was to continue creating this app, I would include a way to have longer and longer patterns for the user to repeat.  Longer patterns would give users a goal to not only strive for, but to improve upon.  I would also research how brain specialist help patients regain their mental abilities and see how I would integrate their methods into my application.  Finally, I would involve more participants in the iterative testing to get a larger sample size so the application would be more accurate in expectations for the spectrum of target audience members.</p><br>
+		
+	</div>
+
+	<!-- Video Modal for All 16:9 Videos -->
+    <div class="modal modal-wide" id="Modal_Video_16_9">
+    	<div class="modal-dialog">
+	    	<div class="modal-content videoModal">
+		    	<div class="modal-body">
+					<div class="sixteenNine">
+	    				<iframe id="VideoModalSource_16_9" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+	    			</div>
+    			</div>
+	    	</div>
+    	</div>
+    </div>
+
+	<!-- Video Modal for All 4:3 Videos -->
+    <div class="modal modal-wide" id="Modal_Video_4_3">
+    	<div class="modal-dialog">
+	    	<div class="modal-content videoModal">
+		    	<div class="modal-body">
+					<div class="threeFour">
+	    				<iframe id="VideoModalSource_4_3" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+	    			</div>
+    			</div>
+	    	</div>
+    	</div>
+    </div>
+
+	<!-- Image Modal for KitchenPal -->
+	<div class="modal modal-wide" id="KPModal_Image">
+    	<div class="modal-dialog modal-lg">
+	    	<div class="modal-content">
+		    	<div class="modal-body galleryModal">
+    				<div class="ScreenShotList">
+			    		<ul>
+			    			<li><input type="image" src="Images/KP/Tablet - Recipe Search.jpg" onclick="replaceImage('KP_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/KP/tablet - recipe view - add items to shopping list.jpg" onclick="replaceImage('KP_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/KP/Tablet - Recipe View.jpg" onclick="replaceImage('KP_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/KP/Scale - Weigh-Item.jpg" onclick="replaceImage('KP_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/KP/Scale - Voice-Weigh.jpg" onclick="replaceImage('KP_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/KP/Scale - Idle.jpg" onclick="replaceImage('KP_I_SSD', this.src);"/></li>
+			    		</ul>
+		    		</div>
+		    		<img class="ScreenShotDisplay" id="KP_I_SSD" src="Images/KP/Tablet - Recipe Search.jpg"/>
+		    	</div>
+	    	</div>
+    	</div>
+    </div>
+
+	<!-- Image Modal for Making History: The Great War -->
+	<div class="modal modal-wide" id="MHModal_Image">
+    	<div class="modal-dialog modal-lg">
+	    	<div class="modal-content">
+		    	<div class="modal-body galleryModal">
+    				<div class="ScreenShotList">
+			    		<ul>
+			    			<li><input type="image" src="Images/MHTGW/MHTGWSS.jpg" onclick="replaceImage('MHTGW_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/MHTGW/MHTGWSS2.jpg" onclick="replaceImage('MHTGW_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/MHTGW/MHTGWSS3.jpg" onclick="replaceImage('MHTGW_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/MHTGW/MHTGWSS4.jpg" onclick="replaceImage('MHTGW_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/MHTGW/MHTGWSS5.jpg" onclick="replaceImage('MHTGW_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/MHTGW/MHTGWSS6.jpg" onclick="replaceImage('MHTGW_I_SSD', this.src);"/></li>
+			    		</ul>
+		    		</div>
+		    		<img class="ScreenShotDisplay" id="MHTGW_I_SSD" src="Images/MHTGW/MHTGWSS.jpg"/>
+		    	</div>
+	    	</div>
+    	</div>
+    </div>
+
+	<!-- Image Modal for Underground Railroad -->
+	<div class="modal modal-wide" id="UGModal_Image">
+    	<div class="modal-dialog modal-lg">
+	    	<div class="modal-content">
+		    	<div class="modal-body galleryModal">
+    				<div class="ScreenShotList">
+			    		<ul>
+			    			<li><input type="image" src="Images/UR/UGRRScreenshot1.jpg" onclick="replaceImage('UG_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/UR/UGRRScreenshot2.jpg" onclick="replaceImage('UG_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/UR/UGRRScreenshot3.jpg" onclick="replaceImage('UG_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/UR/UGRRScreenshot4.jpg" onclick="replaceImage('UG_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/UR/UGRRScreenshot5.jpg" onclick="replaceImage('UG_I_SSD', this.src);"/></li>
+			    		</ul>
+		    		</div>
+		    		<img class="ScreenShotDisplay" id="UG_I_SSD" src="Images/UR/UGRRScreenshot1.jpg"/>
+		    	</div>
+	    	</div>
+    	</div>
+    </div>
+
+	<!-- Image Modal for StudenTopia -->
+	<div class="modal modal-wide" id="KKSTModal_Image">
+    	<div class="modal-dialog modal-lg">
+	    	<div class="modal-content">
+		    	<div class="modal-body galleryModal">
+    				<div class="ScreenShotList">
+			    		<ul>
+			    			<li><input type="image" src="Images/KKST/KickinSS1.jpg" onclick="replaceImage('KKS_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/KKST/KickinSS2.jpg" onclick="replaceImage('KKS_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/KKST/KickinSS3.jpg" onclick="replaceImage('KKS_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/KKST/KickinSS4.jpg" onclick="replaceImage('KKS_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/KKST/KickinSS5.jpg" onclick="replaceImage('KKS_I_SSD', this.src);"/></li>
+			    		</ul>
+		    		</div>
+		    		<img class="ScreenShotDisplay" id="KKS_I_SSD" src="Images/KKST/KickinSS1.jpg"/>
+		    	</div>
+	    	</div>
+    	</div>
+    </div>
+
+	<!-- Image Modal for Government In Action -->
+	<div class="modal modal-wide" id="GinAModal_Image">
+    	<div class="modal-dialog modal-lg">
+	    	<div class="modal-content">
+		    	<div class="modal-body galleryModal">
+    				<div class="ScreenShotList">
+			    		<ul>
+			    			<li><input type="image" src="Images/GinA/AmGovScreenShots1.jpg" onclick="replaceImage('GinA_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/GinA/AmGovScreenShots2.jpg" onclick="replaceImage('GinA_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/GinA/AmGovScreenShots3.jpg" onclick="replaceImage('GinA_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/GinA/AmGovScreenShots4.jpg" onclick="replaceImage('GinA_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/GinA/AmGovScreenShots5.jpg" onclick="replaceImage('GinA_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/GinA/AmGovScreenShots6.jpg" onclick="replaceImage('GinA_I_SSD', this.src);"/></li>
+			    		</ul>
+		    		</div>
+		    		<img class="ScreenShotDisplay" id="GinA_I_SSD" src="Images/GinA/AmGovScreenShots1.jpg"/>
+		    	</div>
+	    	</div>
+    	</div>
+    </div>
+
+	<!-- Image Modal for Practice Operations -->
+	<div class="modal modal-wide" id="POModal_Image">
+    	<div class="modal-dialog modal-lg">
+	    	<div class="modal-content">
+		    	<div class="modal-body galleryModal">
+    				<div class="ScreenShotList">
+			    		<ul>
+			    			<li><input type="image" src="Images/PO/OpsScreenshots.jpg" onclick="replaceImage('PO_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/PO/OpsScreenshots1.jpg" onclick="replaceImage('PO_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/PO/OpsScreenshots2.jpg" onclick="replaceImage('PO_I_SSD', this.src);"/></li>
+			    			<li><input type="image" src="Images/PO/OpsScreenshots4.jpg" onclick="replaceImage('PO_I_SSD', this.src);"/></li>
+			    		</ul>
+		    		</div>
+		    		<img class="ScreenShotDisplay" id="PO_I_SSD" src="Images/PO/OpsScreenshots.jpg"/>
+		    	</div>
+	    	</div>
+    	</div>
+    </div>
+  </body>
+</html>
